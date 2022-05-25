@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lobster&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+}
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+.container{
+    border:2px solid #000;
+    height:80%;
+    display:flex;
+    justify-content:space-around;
+    flex-direction:column;
+    align-items:center;
+    
+}
+.container .top{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:0 25rem;
+}
+.top p{
+    font-size:24px;
+    line-height:29.11px;
+    font-weight:800;
+    margin-bottom:10px;
+    font-family: 'Inter', sans-serif;
+}
+.top i{
+    font-size:2.5rem;
+}
+.bottom{
+    display:flex;
+    justify-content:space-around;
+    flex-direction:column;
+    align-items:center;
+}
+.bottom .cl{
+    background:#0E62CB;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:baseline;
+    min-width:1000px;
+    border-radius:5px;
+    gap:0 .5rem;
+    padding:.8rem .3rem;
+    font-weight:700;
+    font-size:20px;
+    line-height:20px;
+}
+.middle p{
+    font-size:24px;
+    font-weight:500;
+}
+.bottom input{
+    min-width:1000px;
+    padding:.5rem;
+}
+.ip{
+    position:relative;
+}
+::placeholder{
+    font-size:18px;
+    text-align: center;
+}
+.ip i{
+    position:absolute;
+    margin:.5rem 1rem;
+    font-size:30px;
+    left:35%;
+}
+@media screen and (max-width:1200px){
+    .bottom .cl,.bottom input{
+        min-width:700px;
+    }
+    .container .top{
+        gap:0 15rem;
+    }
+    .ip i{
+        position:absolute;
+        left:30%;
+    }
+}
+@media screen and (max-width:968px){
+    .bottom .cl,.bottom input{
+        min-width:500px;
+    }
+    .container .top{
+        gap:0 7rem;
+    }
+    .ip i{
+        position:absolute;
+        left:20%;
+    }
+}
+@media screen and (max-width:600px){
+    .bottom .cl,.bottom input{
+        min-width:400px;
+    }
+    .container .top{
+        gap:0 5rem;
+    }
+    .ip i{
+        position:absolute;
+        left:12.5%;
+    }
+}
+@media screen and (max-width:400px){
+    .bottom .cl,.bottom input{
+        min-width:250px;
+    }
+    .container .top{
+        gap:0 3rem;
+    }
+    .ip i{
+        position:absolute;
+        left:3%;
+    }
+}
+@media screen and (max-width:300px){
+    .bottom .cl,.bottom input{
+        min-width:150px;
+    }
+    .container .top{
+        gap:0 2rem;
+    }
+   
+}
